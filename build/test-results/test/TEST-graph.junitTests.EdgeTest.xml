@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="graph.junitTests.EdgeTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-02-23T19:13:47" hostname="DESKTOP-949BJUA" time="0.008">
+  <properties/>
+  <testcase name="testGetLabel" classname="graph.junitTests.EdgeTest" time="0.006"/>
+  <testcase name="testGetFromVertex" classname="graph.junitTests.EdgeTest" time="0.001"/>
+  <testcase name="testGetToVertex" classname="graph.junitTests.EdgeTest" time="0.0"/>
+  <testcase name="testHashCode" classname="graph.junitTests.EdgeTest" time="0.0"/>
+  <testcase name="testEquals" classname="graph.junitTests.EdgeTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

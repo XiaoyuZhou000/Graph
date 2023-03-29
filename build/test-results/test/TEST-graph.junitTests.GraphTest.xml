@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="graph.junitTests.GraphTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2023-02-23T19:13:47" hostname="DESKTOP-949BJUA" time="0.009">
+  <properties/>
+  <testcase name="testContainsVertexWithLoop" classname="graph.junitTests.GraphTest" time="0.001"/>
+  <testcase name="testContainsVertex" classname="graph.junitTests.GraphTest" time="0.0"/>
+  <testcase name="testGetEdgesTo" classname="graph.junitTests.GraphTest" time="0.0"/>
+  <testcase name="testAddEdgeFromNonExistedVertex" classname="graph.junitTests.GraphTest" time="0.0"/>
+  <testcase name="testContainsEdge" classname="graph.junitTests.GraphTest" time="0.0"/>
+  <testcase name="testAddEdgeFromNonExistedVertexToNonExistedVertex" classname="graph.junitTests.GraphTest" time="0.001"/>
+  <testcase name="testAddEdgeToNonExistedVertex" classname="graph.junitTests.GraphTest" time="0.0"/>
+  <testcase name="testAddVertex" classname="graph.junitTests.GraphTest" time="0.0"/>
+  <testcase name="testAddExistedEdge" classname="graph.junitTests.GraphTest" time="0.001"/>
+  <testcase name="testGetEdgesFrom" classname="graph.junitTests.GraphTest" time="0.0"/>
+  <testcase name="testContainsVertexName" classname="graph.junitTests.GraphTest" time="0.001"/>
+  <testcase name="testGetVertex" classname="graph.junitTests.GraphTest" time="0.001"/>
+  <testcase name="testAddEdgeBetweenExistedVertices" classname="graph.junitTests.GraphTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,15 @@
+# Graph Testing File.
+# Tests that a graph can be created and added one edge between two vertex.
+
+# Create a graph
+CreateGraph graph1
+
+# Add a vertex
+AddNode graph1 n1
+AddNode graph1 n2
+
+# Add an edge
+AddEdge graph1 n1 n2 e1
+
+# Print the vertex in the graph
+ListNodes graph1

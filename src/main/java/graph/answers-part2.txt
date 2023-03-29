@@ -1,0 +1,66 @@
+## CSE 331 hw-graph Part 2 Questions
+
+NOTE: This file is used as part of hw-graph-part2, and is not due as part of the hw-graph-part1
+submission. You may leave it blank for hw-graph-part1.
+
+## Part 1
+###########################################################################
+
+A few examples of possible Graph representations:
+
+    A: A collection of nodes and a collection of edges.
+    B: An adjacency list, in which each node is associated with a list of its outgoing edges.
+    C: An adjacency matrix, which explicitly represents, for every pair ⟨A,B⟩ of nodes, whether there 
+       is a link from A to B, and how many.
+
+1. In two or three sentences, explain an advantage and a disadvantage of each of the
+representations listed above (for example, in terms of runtime complexity, space
+complexity, or ease of implementation).
+
+A collection of nodes and a collection of edges will take a huge time to compute their parent child relationship
+when the graph is big.
+An adjacency list is not easy to implementation because we need to store all the relationship between nodes and
+vertices when they are adding into the graph.
+An adjacency matrix take more space and also need extra computation because the matrix only store the node counts
+and we still need to traverse to get the name of the node.
+
+
+2. In two to three sentences, describe the representation you chose and explain why you
+chose it. If you chose to use a different representation than one of the three we described
+above, be sure to list its advantages and disadvantages, too.
+
+I choose an adjacency list. The directed graph is a structure that starts at some particular
+points and radiates outward. So a map to store the vertices and its outgoing edges is enough
+to implement the graph.
+
+
+## Part 4
+###########################################################################
+
+    (Please keep your answers brief and to-the-point.)
+
+1. Describe any new tests you added and why you added them, or why you feel that your original
+tests alone are sufficient.
+
+I add new tests for my new methods I list below and new tests for base case and continuous operation.
+New method/function need new tests absolutely. I didn't write base case tests last week and it is common
+to hit base sometimes so adding some is not bad.
+
+
+2. Did you make any changes to your specifications as you were implementing your Graph? (yes/no)
+If yes, describe your changes and why you made them.
+
+Yes.
+I add hashCode() to Graph.Edge. Because overriding .equals() should override .hashCode() too.
+I add hashCode() to Graph.Vertex. Because overriding .equals() should override .hashCode() too.
+I create a new constructor for Graph with input "name". Because we have naming requirement for a graph.
+I adjust the old constructor from only taking input "starter" to taking input "name" and "starter". Because we have
+naming requirement for a graph.
+I add method addVertex(), containsVertex(), getEdgesTo(), getAdjacencyList(), and addEdge() for Graph. Because the
+client may need these to update the graph.
+I delete the Vertex constructor with three input "name", "inEdges", and "outEdges". Because I don't need to store
+the into-edges and outgoing-edges anymore.
+I delete the method getInEdges(), getOutEdges(), addInEdges(), addOutEdges() from Graph.Vertex. Because I don't need
+to update the into-edges and outgoing-edges anymore.
+I delete the method addEdgeFor() for Graph. Because the name of the method is confusing and I use addEdge() instead.
+

@@ -1,0 +1,9 @@
+# Graph Testing File.
+# Tests that a graph can be created.
+
+# Create a graph
+CreateGraph graph1
+
+# Print the vertex in the graph
+ListNodes graph1
+

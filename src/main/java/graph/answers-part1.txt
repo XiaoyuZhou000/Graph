@@ -1,0 +1,38 @@
+## CSE 331 hw-graph Part 1 Questions
+
+## Part 1
+###########################################################################
+
+Briefly explain why you included the operations you did and why you feel they are a sufficient
+interface to a graph. If your design includes multiple classes or interfaces, explain why you
+included each one; if not, explain whether you considered additional classes and why you decided
+not to include them.
+
+I included three constructor in my Graph. One is to create a empty Graph with no Vertex existed in
+the Graph. One is to create a Graph with a starter Vertex. One is to create a Graph with a relationship
+between Vertices and Edges which store in a Map. I included four methods, getEdgesFrom(), getEdgesTo(),
+getAdjacencyList(), addEdge(), in my Graph. getEdgesFrom() is used to get the parents Edges for a Vertex.
+getEdgesTo() is used to get the children Edges for a Vertex. getAdjacencyList() is used to get the
+relationship Map between Vertices and Edges. addEdge() is used to add new edge into this graph. I override
+two methods, which are hashCode() and equals(). Because the Graph can have consistency, we need to make
+sure hashCode() and equals() can express the consistency when two Graphs are the same.
+
+Also, I included inner class Vertex and Edge. It is too complicated to include all the relationship of
+parents and children in Graph. So I store the relationship in Vertex and store the origin and destination
+for an Edge in Edge instead.
+
+
+## Part 2
+###########################################################################
+
+What was your testing strategy for this assignment? How do your script tests and JUnit tests
+differ from each other (if they do), and why?
+
+My testing strategy is to test every method or function I wrote in the skeleton code. I try to test
+my Graph's function in script tests with a big picture, like can it create a new graph, can it add node,
+can it show children Node. I try to make sure every method I try to write can be tested in JUnit. For
+example, I test creating a new empty graph in script test, and now I will test creating a new graph
+with other constructor. They tend to complement each other.
+
+
+

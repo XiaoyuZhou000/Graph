@@ -1,0 +1,11 @@
+# Graph Testing File.
+# Tests that a graph can be created and added one vertex.
+
+# Create a graph
+created graph graph1
+
+# Add a vertex
+added node n1 to graph1
+
+# Print the vertex in the graph
+graph1 contains: n1
